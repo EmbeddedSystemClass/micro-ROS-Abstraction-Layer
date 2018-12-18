@@ -1,0 +1,8 @@
+ifeq ($(CONFIG_MICROROS_AL_SPI),y)
+CSRCS += microros_spi_al.c microros_spi_nuttx.c
+
+DEPPATH += --dep-path microros_al/SPI
+VPATH += :microros_al/SPI
+endif
+
+

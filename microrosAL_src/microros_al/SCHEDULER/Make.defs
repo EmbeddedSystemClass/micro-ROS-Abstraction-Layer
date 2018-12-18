@@ -1,0 +1,8 @@
+ifeq ($(CONFIG_MICROROS_AL_SCHE),y)
+CSRCS += microros_sche_al.c microros_sche_nuttx.c
+
+DEPPATH += --dep-path microros_al/SCHEDULER
+VPATH += :microros_al/SCHEDULER
+endif
+
+

@@ -1,0 +1,8 @@
+ifeq ($(CONFIG_MICROROS_AL_UART),y)
+CSRCS += microros_uart_al.c microros_uart_nuttx.c
+
+DEPPATH += --dep-path microros_al/UART
+VPATH += :microros_al/UART
+endif
+
+

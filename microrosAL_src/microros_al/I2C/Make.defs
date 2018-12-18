@@ -1,0 +1,8 @@
+ifeq ($(CONFIG_MICROROS_AL_I2C),y)
+CSRCS += microros_i2c_al.c microros_i2c_nuttx.c
+
+DEPPATH += --dep-path microros_al/I2C
+VPATH += :microros_al/I2C
+endif
+
+

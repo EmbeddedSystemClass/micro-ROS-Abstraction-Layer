@@ -1,0 +1,51 @@
+menu "microROS AL configuration"
+
+config microROS_AL_LIB
+	bool "Enable microROS AL"
+	default n
+	---help---
+		Add description of microROS al!!
+
+if microROS_AL_LIB
+
+	config MICROROS_AL_UART
+		bool "Enable microROS AL UART"
+		default n
+		---help---
+		Add Description!!
+
+	config MICROROS_AL_SPI
+		bool "Enable microROS AL SPI"
+		default n
+		---help---
+		Add Description!!
+
+	config MICROROS_AL_I2C
+		bool "Enable microROS AL I2C"
+		default n
+		---help---
+		Add Description!!
+
+	config MICROROS_AL_GPIO
+		bool "Enable microROS AL GPIO"
+		default n
+		---help---
+		Add Description!!
+
+	config MICROROS_AL_SCHE
+		bool "Enable microROS AL SCHEDULER"
+		default n
+		---help---
+		Add Description!!
+
+	config MICROROS_AL_TIMER
+		bool "Enable microROS AL TIMER"
+		default n
+		---help---
+		Add Description!!
+
+
+
+endif #microROS_AL_LIB
+
+endmenu
