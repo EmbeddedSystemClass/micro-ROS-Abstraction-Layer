@@ -37,10 +37,18 @@ Close and save the file.
 
 At this point the source code is already implemented, it only left to implement the headers.
 
-- Copy this folder ([microROS include](https://github.com/microROS/microROS-Abstraction-Layer/tree/master/microrosAL_Inc/microros_al))
+- Copy this folder ([microROS include](https://github.com/microROS/microROS-Abstraction-Layer/tree/master/microrosAL_Inc/microros_al)) to the NuttX include directory ([/NuttX/include](https://github.com/microROS/NuttX/tree/master/include)).
 
 ### freeRTOS
+
+**This alpha version only works with a generated freeRTOS STM32Cube project, set to be used with Atollic True Studio**
+
+The implementation in this RTOS is straightforward, it's only necessary to copy the source code of the AL ([microros_AL src](https://github.com/microROS/microROS-Abstraction-Layer/tree/master/microrosAL_src/microros_al)) to the source code of freeRTOS and copy the header folder of microROS Al([microros_AL inc](https://github.com/microROS/microROS-Abstraction-Layer/tree/master/microrosAL_Inc/microros_al)) to the include folder of freeRTOS.
 
 ## How to configure:
 ### NuttX
+WIP
 ### freeRTOS
+WIP
+
+WIP: We will provide a version of freeRTOS  with the proper configuration and includes to run microROS AL. Also a defconfig to set the proper configuration for NuttX
